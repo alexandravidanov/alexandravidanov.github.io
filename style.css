@@ -1,0 +1,94 @@
+:root{
+  /* White pages, black text, Alexandra's orange as the one signature colour; project photos fill the screen behind white text panels. */
+  --paper:#ffffff;
+  --ink:#1b1b1b;
+  --grey:#666666;
+  --rule:#e6e6e6;
+  --orange:#F79315;
+  --font:"Lato", "Helvetica Neue", Arial, sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--paper)}
+body{background:var(--paper);color:var(--ink);font-family:var(--font);font-size:18px;line-height:1.6}
+a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--orange);text-decoration-thickness:2px;text-underline-offset:4px}
+a:hover{background:var(--orange)}
+a:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+img,video{max-width:100%;display:block}
+h1,h2,h3{font-weight:900;line-height:1.1;text-wrap:balance}
+
+.bar{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:18px 28px;font-size:15px}
+.bar strong{font-weight:700}
+
+/* opening */
+.intro{max-width:1180px;margin:0 auto;padding:40px 28px 90px;display:grid;grid-template-columns:300px 1fr;gap:64px;align-items:start}
+.portrait{position:relative;margin-top:26px}
+.portrait::before{content:"";position:absolute;inset:22px -22px -22px 22px;background:var(--orange);z-index:0}
+.portrait img{position:relative;z-index:1;width:100%;aspect-ratio:4/5;object-fit:cover}
+.intro h1{font-size:clamp(48px,7.4vw,96px);letter-spacing:-.02em;margin-bottom:22px}
+.intro .sub{font-size:21px;font-weight:700;margin-bottom:22px}
+.intro p{max-width:34em;margin-bottom:16px}
+.intro .avail{display:inline-block;margin-top:10px;font-size:16px;border-left:6px solid var(--orange);padding:4px 0 4px 14px}
+
+/* project cases: photo background, white text panel in front */
+.case{position:relative;min-height:760px;display:flex;padding:80px 6vw;background-size:cover;background-position:center}
+.case.left{justify-content:flex-start;align-items:center}
+.case.right{justify-content:flex-end;align-items:flex-end}
+.case.mid{justify-content:center;align-items:flex-end}
+.panel{background:var(--paper);max-width:560px;padding:38px 40px 34px;border-top:8px solid var(--orange);box-shadow:0 2px 0 rgba(0,0,0,.04)}
+.panel h2{font-size:32px;margin-bottom:6px}
+.panel .meta{font-size:14.5px;color:var(--grey);margin-bottom:18px}
+.panel p{font-size:17px;margin-bottom:13px}
+.panel p:last-child{margin-bottom:0}
+.credit{position:absolute;left:6vw;bottom:18px;font-size:13px;color:#fff;background:rgba(0,0,0,.45);padding:3px 8px}
+.case.left .credit{left:auto;right:6vw}
+.thumbs{display:flex;gap:12px;margin:18px 0 6px}
+.thumbs figure{flex:1}
+.thumbs img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.thumbs figcaption{font-size:13px;color:var(--grey);margin-top:5px;line-height:1.35}
+.watch{display:inline-block;margin-top:6px;font-weight:700}
+
+/* digital art + thesis */
+.digital{max-width:1180px;margin:0 auto;padding:110px 28px 0;display:grid;grid-template-columns:240px 1fr;gap:56px}
+.digital video{width:100%;aspect-ratio:9/16;object-fit:cover;background:#000}
+.digital .cap{font-size:13.5px;color:var(--grey);margin-top:10px;line-height:1.4}
+.digital h2{font-size:36px;margin-bottom:20px}
+.digital p{max-width:36em;margin-bottom:16px}
+.thesis-wrap{max-width:1180px;margin:0 auto;padding:36px 28px 0}
+.thesis{margin-left:296px;padding:26px 30px;background:#fff6ea;border-left:8px solid var(--orange);max-width:40em}
+.thesis h3{font-size:22px;margin-bottom:10px}
+.thesis p{margin-bottom:10px}
+.thesis p:last-child{margin-bottom:0}
+
+/* career */
+.career{max-width:1180px;margin:0 auto;padding:90px 28px 60px}
+.career h2{font-size:36px;margin-bottom:8px}
+.career > p{color:var(--grey);margin-bottom:30px;max-width:40em}
+.career ol{list-style:none}
+.career li{display:grid;grid-template-columns:170px 1fr;gap:24px;padding:15px 0;border-top:1px solid var(--rule)}
+.career li:last-child{border-bottom:1px solid var(--rule)}
+.career .when{color:var(--grey);font-size:15.5px;font-variant-numeric:tabular-nums;padding-top:2px}
+.career b{font-weight:700}
+.career span.what{display:block;font-size:16.5px;color:#333}
+
+.contact{background:var(--orange);color:var(--ink)}
+.contact .in{max-width:1180px;margin:0 auto;padding:56px 28px 60px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:28px;align-items:flex-end}
+.contact h2{font-size:40px}
+.contact p{font-size:19px;line-height:1.7}
+.contact a{text-decoration-color:var(--ink)}
+.contact a:hover{background:var(--paper)}
+
+@media (max-width:860px){
+  .intro{grid-template-columns:1fr;gap:40px;padding-bottom:70px}
+  .portrait{max-width:260px}
+  .case{min-height:0;padding:300px 16px 40px;background-position:top center;background-size:100% auto;background-repeat:no-repeat;background-color:#f2f2f2}
+  .case.left,.case.right,.case.mid{justify-content:center;align-items:flex-end}
+  .panel{padding:28px 22px}
+  .credit{top:12px;bottom:auto;left:16px}
+  .case.left .credit{left:16px;right:auto}
+  .digital{grid-template-columns:1fr}
+  .thesis{margin-left:0}
+  .digital video{max-width:240px}
+  .career li{grid-template-columns:1fr;gap:2px}
+}
+@media (prefers-reduced-motion:reduce){.digital video{display:none}}
