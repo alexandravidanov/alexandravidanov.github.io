@@ -81,7 +81,7 @@ h1,h2,h3{font-weight:900;line-height:1.1;text-wrap:balance}
 @media (max-width:860px){
   .intro{grid-template-columns:1fr;gap:40px;padding-bottom:70px}
   .portrait{max-width:260px}
-  .case{min-height:0;padding:300px 16px 40px;background-position:top center;background-size:100% auto;background-repeat:no-repeat;background-color:#f2f2f2}
+  .case{min-height:0;padding:calc(var(--ratio,66%) + 12px) 16px 40px;background-position:top center !important;background-size:100% auto;background-repeat:no-repeat;background-color:#f2f2f2}
   .case.left,.case.right,.case.mid{justify-content:center;align-items:flex-end}
   .panel{padding:28px 22px}
   .credit{top:12px;bottom:auto;left:16px}
