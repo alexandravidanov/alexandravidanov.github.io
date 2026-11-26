@@ -46,7 +46,8 @@ h1,h2,h3{font-weight:900;line-height:1.1;text-wrap:balance}
 .thumbs figure{flex:1}
 .thumbs img{width:100%;aspect-ratio:3/4;object-fit:cover}
 .thumbs figcaption{font-size:13px;color:var(--grey);margin-top:5px;line-height:1.35}
-.watch{display:inline-block;margin-top:6px;font-weight:700}
+.teaser{width:100%;aspect-ratio:16/9;object-fit:cover;background:#000;margin-top:20px;border:1px solid var(--rule)}
+.full-film{display:inline-block;margin-top:10px;font-size:14.5px}
 
 /* digital art + thesis */
 .digital{max-width:1180px;margin:0 auto;padding:110px 28px 0;display:grid;grid-template-columns:240px 1fr;gap:56px}
