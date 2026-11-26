@@ -54,7 +54,7 @@ h1,h2,h3{font-weight:900;line-height:1.1;text-wrap:balance}
 .digital .cap{font-size:13.5px;color:var(--grey);margin-top:10px;line-height:1.4}
 .digital h2{font-size:36px;margin-bottom:20px}
 .digital p{max-width:36em;margin-bottom:16px}
-.thesis{margin-top:36px;padding:26px 30px;background:#fff6ea;border-left:8px solid var(--orange);max-width:40em}
+.thesis{margin-top:36px;padding:26px 30px;background:#fff6ea;border-left:8px solid var(--orange);max-width:36em}
 .thesis h3{font-size:22px;margin-bottom:10px}
 .thesis p{margin-bottom:10px}
 .thesis p:last-child{margin-bottom:0}
